@@ -8,16 +8,19 @@ import (
 )
 
 func main() {
-	mod := BetterFoodMod()
+	mod := FairJarsMod()
 
-	data, err := xml.Marshal(mod.configs)
-	if err != nil {
-		panic(err)
+	for _, file := range mod {
+		data, err := xml.Marshal(file.configs)
+		if err != nil {
+			panic(err)
+		}
+
+		fmtdata := xmlfmt.FormatXML(string(data), "", "\t")
+		err = os.WriteFile(file.Filename, []byte(fmtdata), 0777)
+		if err != nil {
+			panic(err)
+		}
 	}
 
-	fmtdata := xmlfmt.FormatXML(string(data), "", "\t")
-	err = os.WriteFile(mod.Filename, []byte(fmtdata), 0777)
-	if err != nil {
-		panic(err)
-	}
 }

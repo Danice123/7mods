@@ -1,0 +1,51 @@
+
+<configs>
+	<setattribute xpath="/recipes/recipe[@name=&#39;resourcePaper&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">resourcePaperBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;drugHerbalAntibiotics&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">drugHerbalAntibioticsBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodCornOnTheCob&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodCornOnTheCobBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodMeatStew&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodMeatStewBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodShamChowder&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodShamChowderBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;medicalFirstAidKit&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">medicalFirstAidKitBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;resourceGlue&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">resourceGlueBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;drugFortBites&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">drugFortBitesBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodPumpkinPie&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodPumpkinPieBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodBoiledMeat&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodBoiledMeatBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;drugAntibiotics&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">drugAntibioticsBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;drugSteroids&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">drugSteroidsBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodHoboStew&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodHoboStewBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodGumboStew&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodGumboStewBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodVegetableStew&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodVegetableStewBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;drugRecog&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">drugRecogBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodBlueberryPie&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodBlueberryPieBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodCornBread&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodCornBreadBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodSpaghetti&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodSpaghettiBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;resourcePaint&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">resourcePaintBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodPumpkinBread&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodPumpkinBreadBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodEggBoiled&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodEggBoiledBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;medicalPlasterCast&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">medicalPlasterCastBundle
+	</setattribute>
+	<setattribute xpath="/recipes/recipe[@name=&#39;foodPumpkinCheesecake&#39; and not @tags=&#39;salvageScrap&#39;]" name="name">foodPumpkinCheesecakeBundle
+	</setattribute>
+</configs>
