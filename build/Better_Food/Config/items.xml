@@ -1,0 +1,175 @@
+
+<configs>
+	<set xpath="/items/item[@name=&#39;drugAtomJunkies&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugCovertCats&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugEyeKandy&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugHackers&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugHealthBar&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugJailBreakers&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugNerdTats&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugOhShitzDrops&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugRockBusters&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugSkullCrushers&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;drugSugarButts&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;foodHoney&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">16
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanBeef&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanChicken&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanLamb&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanCatfood&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanDogfood&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanChili&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanTuna&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanSham&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanPasta&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanSalmon&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanMiso&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanMiso&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanPeas&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanPeas&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanPears&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanPears&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanSoup&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanSoup&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanStock&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCanStock&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCornOnTheCob&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCornBread&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodShamSandwich&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">30
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCharredMeat&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodGrilledMeat&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodBoiledMeat&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodBoiledMeat&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodMeatStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">100
+	</set>
+	<set xpath="/items/item[@name=&#39;foodMeatStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">40
+	</set>
+	<set xpath="/items/item[@name=&#39;foodSteakAndPotato&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">100
+	</set>
+	<set xpath="/items/item[@name=&#39;foodShamChowder&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">106
+	</set>
+	<set xpath="/items/item[@name=&#39;foodShamChowder&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodHoboStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">128
+	</set>
+	<set xpath="/items/item[@name=&#39;foodHoboStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">40
+	</set>
+	<set xpath="/items/item[@name=&#39;foodFishTacos&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">92
+	</set>
+	<set xpath="/items/item[@name=&#39;foodChiliDog&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">106
+	</set>
+	<set xpath="/items/item[@name=&#39;foodBakedPotato&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodBlueberryPie&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">90
+	</set>
+	<set xpath="/items/item[@name=&#39;foodPumpkinPie&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">100
+	</set>
+	<set xpath="/items/item[@name=&#39;foodPumpkinCheesecake&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">84
+	</set>
+	<set xpath="/items/item[@name=&#39;foodPumpkinBread&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">24
+	</set>
+	<set xpath="/items/item[@name=&#39;foodGumboStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">224
+	</set>
+	<set xpath="/items/item[@name=&#39;foodGumboStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">40
+	</set>
+	<set xpath="/items/item[@name=&#39;foodShepardsPie&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">208
+	</set>
+	<set xpath="/items/item[@name=&#39;foodSpaghetti&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">244
+	</set>
+	<set xpath="/items/item[@name=&#39;foodTunaFishGravyToast&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">180
+	</set>
+	<set xpath="/items/item[@name=&#39;foodEggBoiled&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;foodBaconAndEggs&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">72
+	</set>
+	<set xpath="/items/item[@name=&#39;foodVegetableStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">62
+	</set>
+	<set xpath="/items/item[@name=&#39;foodVegetableStew&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">40
+	</set>
+	<set xpath="/items/item[@name=&#39;foodRawMeat&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">4
+	</set>
+	<set xpath="/items/item[@name=&#39;foodRottingFlesh&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">2
+	</set>
+	<set xpath="/items/item[@name=&#39;foodEgg&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCornMeal&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">4
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCornMeal&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">-6
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCropBlueberries&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">2
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCropCorn&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">4
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCropGraceCorn&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">6
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCropPotato&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">4
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCropMushrooms&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">4
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCropYuccaFruit&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">2
+	</set>
+	<set xpath="/items/item[@name=&#39;foodCropPumpkin&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">6
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarRiverWater&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">20
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarBoiledWater&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">40
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarPureMineralWater&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">120
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarYuccaJuice&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">68
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarGoldenRodTea&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">48
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarRedTea&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">48
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkYuccaJuiceSmoothie&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">44
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkYuccaJuiceSmoothie&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">156
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkCanMegaCrush&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">120
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarCoffee&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">48
+	</set>
+	<set xpath="/items/item[@name=&#39;drinkJarBlackStrapCoffee&#39;]/effect_group/triggered_effect[@cvar=&#39;$waterAmountAdd&#39;]/@value">48
+	</set>
+	<set xpath="/items/item[@name=&#39;resourceAnimalFat&#39;]/effect_group/triggered_effect[@cvar=&#39;$foodAmountAdd&#39;]/@value">10
+	</set>
+</configs>
