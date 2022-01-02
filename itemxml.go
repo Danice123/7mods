@@ -11,10 +11,10 @@ type Items struct {
 }
 
 type Item struct {
-	XMLName     xml.Name     `xml:"item"`
-	Name        string       `xml:"name,attr"`
-	Properties  []*Property  `xml:"property"`
-	EffectGroup *EffectGroup `xml:"effect_group"`
+	XMLName     xml.Name       `xml:"item"`
+	Name        string         `xml:"name,attr"`
+	Properties  []*Property    `xml:"property"`
+	EffectGroup []*EffectGroup `xml:"effect_group"`
 }
 
 type Property struct {
@@ -27,7 +27,16 @@ type Property struct {
 
 type EffectGroup struct {
 	XMLName          xml.Name           `xml:"effect_group"`
+	Name             string             `xml:"name,attr,omitempty"`
+	PassiveEffects   []*PassiveEffect   `xml:"passive_effect"`
 	TriggeredEffects []*TriggeredEffect `xml:"triggered_effect"`
+}
+
+type PassiveEffect struct {
+	XMLName   xml.Name `xml:"passive_effect"`
+	Name      string   `xml:"name,attr"`
+	Operation string   `xml:"operation,attr"`
+	Value     string   `xml:"value,attr"`
 }
 
 type TriggeredEffect struct {

@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	mod := FairJarsMod()
+	mod := DoubleDamageGuns()
 
 	for _, file := range mod {
 		data, err := xml.Marshal(file.configs)
