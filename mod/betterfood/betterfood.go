@@ -1,24 +1,27 @@
-package main
+package betterfood
 
 import (
 	"fmt"
 	"strconv"
+
+	"github.com/Danice123/7mods/mod"
+	"github.com/Danice123/7mods/sevenxml"
 )
 
-func BetterFoodMod() *Modfile {
-	items := ReadItemsXml()
+func BetterFoodMod() *mod.Mod {
+	items := sevenxml.ReadItemsXml()
 
-	mod := NewModFile("build/Better_Food/Config/items.xml")
+	itemOverride := mod.NewModFile(mod.ITEMS)
 	for _, item := range items.Items {
-		if item.EffectGroup != nil {
-			for _, effect := range item.EffectGroup.TriggeredEffects {
+		for _, eg := range item.EffectGroup {
+			for _, effect := range eg.TriggeredEffects {
 				if effect.CVar == "$foodAmountAdd" {
 					xpath := fmt.Sprintf("/items/item[@name='%s']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value", item.Name)
 					value, err := strconv.Atoi(effect.Value)
 					if err != nil {
 						panic(err)
 					}
-					mod.Set(xpath, strconv.Itoa(value*2))
+					itemOverride.Set(xpath, strconv.Itoa(value*2))
 				}
 				if effect.CVar == "$waterAmountAdd" {
 					xpath := fmt.Sprintf("/items/item[@name='%s']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value", item.Name)
@@ -26,11 +29,17 @@ func BetterFoodMod() *Modfile {
 					if err != nil {
 						panic(err)
 					}
-					mod.Set(xpath, strconv.Itoa(value*2))
+					itemOverride.Set(xpath, strconv.Itoa(value*2))
 				}
 			}
 		}
 	}
 
-	return mod
+	return &mod.Mod{
+		Name:        "Better_Food",
+		Description: "Make food doublegood",
+		Files: []*mod.Modfile{
+			itemOverride,
+		},
+	}
 }

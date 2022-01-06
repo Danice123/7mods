@@ -1,4 +1,4 @@
-package main
+package sevenxml
 
 import (
 	"encoding/xml"

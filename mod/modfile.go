@@ -1,10 +1,23 @@
-package main
+package mod
 
-import "encoding/xml"
+import (
+	"encoding/xml"
+	"fmt"
+	"os"
+
+	"github.com/go-xmlfmt/xmlfmt"
+)
+
+type TargetFile string
+
+const ITEMS = TargetFile("items.xml")
+const ENTITYCLASSES = TargetFile("entityclasses.xml")
+const PROGRESSION = TargetFile("progression.xml")
+const RECIPES = TargetFile("recipes.xml")
 
 type Modfile struct {
-	Filename string
-	configs  *Configs
+	target  TargetFile
+	configs *Configs
 }
 
 type Configs struct {
@@ -33,12 +46,25 @@ type Append struct {
 	Values  []interface{}
 }
 
-func NewModFile(filename string) *Modfile {
+func NewModFile(target TargetFile) *Modfile {
 	return &Modfile{
-		Filename: filename,
+		target: target,
 		configs: &Configs{
 			Sets: []*Set{},
 		},
+	}
+}
+
+func (ths *Modfile) Write(modName string) {
+	data, err := xml.Marshal(ths.configs)
+	if err != nil {
+		panic(err)
+	}
+
+	fmtdata := xmlfmt.FormatXML(string(data), "", "\t")
+	err = os.WriteFile(fmt.Sprintf("build/%s/Config/%s", modName, ths.target), []byte(fmtdata), 0777)
+	if err != nil {
+		panic(err)
 	}
 }
 

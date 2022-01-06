@@ -4,13 +4,15 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+
+	"github.com/Danice123/7mods/mod"
+	"github.com/Danice123/7mods/sevenxml"
 )
 
-func DoubleDamageGuns() []*Modfile {
-	items := ReadItemsXml()
+func DoubleDamageGuns() *mod.Mod {
+	items := sevenxml.ReadItemsXml()
 
-	mod := NewModFile("build/Double_Gun_Damage/Config/items.xml")
-
+	itemoverride := mod.NewModFile(mod.ITEMS)
 	for _, item := range items.Items {
 		if strings.HasPrefix(item.Name, "ammo") && !strings.Contains(item.Name, "Bundle") && !strings.HasPrefix(item.Name, "ammoProjectile") && !strings.HasPrefix(item.Name, "ammoGas") {
 
@@ -22,7 +24,7 @@ func DoubleDamageGuns() []*Modfile {
 							if err != nil {
 								panic(err)
 							}
-							mod.SetAttribute(fmt.Sprintf("/items/item[@name='%s']/effect_group[@name='%s']/passive_effect[@name='EntityDamage' and @operation='base_set']", item.Name, item.Name), "value", strconv.Itoa(int(damage*2)))
+							itemoverride.SetAttribute(fmt.Sprintf("/items/item[@name='%s']/effect_group[@name='%s']/passive_effect[@name='EntityDamage' and @operation='base_set']", item.Name, item.Name), "value", strconv.Itoa(int(damage*2)))
 						}
 					}
 				}
@@ -30,5 +32,9 @@ func DoubleDamageGuns() []*Modfile {
 		}
 	}
 
-	return []*Modfile{mod}
+	return &mod.Mod{
+		Name:        "Double_Gun_Damage",
+		Description: "",
+		Files:       []*mod.Modfile{},
+	}
 }
