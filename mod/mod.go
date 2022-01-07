@@ -8,7 +8,11 @@ import (
 type Mod struct {
 	Name        string
 	Description string
-	Files       []*Modfile
+	Files       []Writable
+}
+
+type Writable interface {
+	Write(string)
 }
 
 func (ths *Mod) Write() {

@@ -32,6 +32,9 @@ func buildBeckerator(auger *sevenxml.Item) *sevenxml.Item {
 	beckerator.Properties = append(beckerator.Properties, &sevenxml.Property{
 		Name:  "CustomIconTint",
 		Value: "0,255,0",
+	}, &sevenxml.Property{
+		Name:  "CustomIcon",
+		Value: "meleeToolPickT3Auger",
 	})
 
 	for _, effect := range auger.EffectGroups[0].PassiveEffects {
@@ -171,13 +174,32 @@ func Beckerator() *mod.Mod {
 		},
 	})
 
+	local := mod.NewLocalizationFile()
+	local.Entries = append(local.Entries, mod.Entry{
+		Id:      "meleeToolPickT4Beckerator",
+		File:    "items",
+		Type:    "Tool",
+		English: "Beckerator",
+	}, mod.Entry{
+		Id:      "meleeToolPickT4BeckeratorDesc",
+		File:    "items",
+		Type:    "Tool",
+		English: "To dig or not to dig, that is the question. And the only answer is dig.",
+	}, mod.Entry{
+		Id:      "meleeToolPickT4BeckeratorSchematic",
+		File:    "items",
+		Type:    "Tool",
+		English: "Beckerator Schematic",
+	})
+
 	return &mod.Mod{
 		Name:        "Beckerator",
 		Description: "Gotta mine fast",
-		Files: []*mod.Modfile{
+		Files: []mod.Writable{
 			itemmod,
 			recipemod,
 			lootmod,
+			local,
 		},
 	}
 }

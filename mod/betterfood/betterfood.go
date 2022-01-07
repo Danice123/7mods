@@ -38,7 +38,7 @@ func BetterFoodMod() *mod.Mod {
 	return &mod.Mod{
 		Name:        "Better_Food",
 		Description: "Make food doublegood",
-		Files: []*mod.Modfile{
+		Files: []mod.Writable{
 			itemOverride,
 		},
 	}

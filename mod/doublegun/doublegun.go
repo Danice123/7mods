@@ -35,6 +35,6 @@ func DoubleDamageGuns() *mod.Mod {
 	return &mod.Mod{
 		Name:        "Double_Gun_Damage",
 		Description: "",
-		Files:       []*mod.Modfile{},
+		Files:       []mod.Writable{},
 	}
 }

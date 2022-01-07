@@ -217,7 +217,7 @@ nextItem:
 
 	return &mod.Mod{
 		Name: "Fair_Jars",
-		Files: []*mod.Modfile{
+		Files: []mod.Writable{
 			itemModFile,
 			recipeModFile,
 		},
