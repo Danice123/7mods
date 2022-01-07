@@ -49,7 +49,7 @@ type ModInfoTag struct {
 	Name        *TagWithValue `xml:"Name"`
 	Description *TagWithValue `xml:"Description"`
 	Author      *TagWithValue `xml:"Author"`
-	Version     *TagWithValue `xml:"Vmersion"`
+	Version     *TagWithValue `xml:"Version"`
 }
 
 type TagWithValue struct {
