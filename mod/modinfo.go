@@ -33,7 +33,7 @@ func WriteModInfo(slug string, description string) {
 	}
 
 	fmtdata := xmlfmt.FormatXML(fmt.Sprintf("%s%s", `<?xml version="1.0" encoding="UTF-8"?>`, string(data)), "", "\t")
-	err = os.WriteFile(fmt.Sprintf("build/%s/ModInfo.xml", slug), []byte(fmtdata), 0777)
+	err = os.WriteFile(fmt.Sprintf("build/%s/ModInfo.xml", slug), []byte(fmtdata)[2:], 0777)
 	if err != nil {
 		panic(err)
 	}

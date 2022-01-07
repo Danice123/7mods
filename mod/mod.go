@@ -12,7 +12,7 @@ type Mod struct {
 }
 
 func (ths *Mod) Write() {
-	err := os.MkdirAll(fmt.Sprintf("build/%s/Config", ths.Name), 0x0777)
+	err := os.MkdirAll(fmt.Sprintf("build/%s/Config", ths.Name), 0777)
 	if err != nil {
 		panic(err)
 	}

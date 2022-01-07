@@ -61,8 +61,8 @@ func (ths *Modfile) Write(modName string) {
 		panic(err)
 	}
 
-	fmtdata := xmlfmt.FormatXML(string(data), "", "\t")
-	err = os.WriteFile(fmt.Sprintf("build/%s/Config/%s", modName, ths.target), []byte(fmtdata), 0777)
+	fmtdata := xmlfmt.FormatXML(fmt.Sprintf("%s%s", `<?xml version="1.0" encoding="UTF-8"?>`, string(data)), "", "\t")
+	err = os.WriteFile(fmt.Sprintf("build/%s/Config/%s", modName, ths.target), []byte(fmtdata)[2:], 0777)
 	if err != nil {
 		panic(err)
 	}
