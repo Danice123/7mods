@@ -27,7 +27,7 @@ func NewLocalizationFile() *Localization {
 func (ths *Localization) Write(modName string) {
 	data := header
 	for _, entry := range ths.Entries {
-		data = fmt.Sprintf("%s\n%s,%s,%s,%s", data, entry.Id, entry.File, entry.Type, entry.English)
+		data = fmt.Sprintf("%s\n%s,%s,%s,\"%s\"", data, entry.Id, entry.File, entry.Type, entry.English)
 	}
 
 	err := os.WriteFile(fmt.Sprintf("build/%s/Config/Localization.txt", modName), []byte(data), 0777)
