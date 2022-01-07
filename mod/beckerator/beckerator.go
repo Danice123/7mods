@@ -29,6 +29,10 @@ func buildBeckerator(auger *sevenxml.Item) *sevenxml.Item {
 			beckerator.Properties = append(beckerator.Properties, prop)
 		}
 	}
+	beckerator.Properties = append(beckerator.Properties, &sevenxml.Property{
+		Name:  "CustomIconTint",
+		Value: "0,255,0",
+	})
 
 	for _, effect := range auger.EffectGroups[0].PassiveEffects {
 		// <passive_effect name="BlockDamage" operation="base_set" value="20.7" tags="perkMiner69r,miningTool"/>
@@ -67,6 +71,10 @@ func buildSchematic() *sevenxml.Item {
 			{
 				Name:  "CustomIcon",
 				Value: "meleeToolPickT3Auger",
+			},
+			{
+				Name:  "CustomIconTint",
+				Value: "0,255,0",
 			},
 			{
 				Name:  "Unlocks",
