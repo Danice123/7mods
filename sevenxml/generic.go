@@ -13,6 +13,7 @@ type Property struct {
 type EffectGroup struct {
 	XMLName          xml.Name  `xml:"effect_group"`
 	Name             string    `xml:"name,attr,omitempty"`
+	Tiered           string    `xml:"tiered,attr,omitempty"`
 	PassiveEffects   []*Effect `xml:"passive_effect"`
 	TriggeredEffects []*Effect `xml:"triggered_effect"`
 }
@@ -24,4 +25,7 @@ type Effect struct {
 	CVar      string `xml:"cvar,attr,omitempty"`
 	Operation string `xml:"operation,attr,omitempty"`
 	Value     string `xml:"value,attr,omitempty"`
+	Tags      string `xml:"tags,attr,omitempty"`
+	Exp       string `xml:"exp,attr,omitempty"`
+	Level     string `xml:"level,attr,omitempty"`
 }

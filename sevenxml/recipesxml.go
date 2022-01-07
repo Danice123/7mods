@@ -11,10 +11,13 @@ type RecipeXML struct {
 }
 
 type Recipe struct {
-	XMLName     xml.Name      `xml:"recipe"`
-	Name        string        `xml:"name,attr"`
-	Count       int           `xml:"count,attr"`
-	Ingredients []*Ingredient `xml:"ingredient"`
+	XMLName      xml.Name       `xml:"recipe"`
+	Name         string         `xml:"name,attr"`
+	Count        int            `xml:"count,attr"`
+	CraftArea    string         `xml:"craft_area,attr,omitempty"`
+	Tags         string         `xml:"tags,attr,omitempty"`
+	Ingredients  []*Ingredient  `xml:"ingredient"`
+	EffectGroups []*EffectGroup `xml:"effect_group"`
 }
 
 type Ingredient struct {
@@ -24,7 +27,7 @@ type Ingredient struct {
 }
 
 func ReadRecipesXml() *RecipeXML {
-	data, err := os.ReadFile("recipes.xml")
+	data, err := os.ReadFile("xml/recipes.xml")
 	if err != nil {
 		panic(err)
 	}

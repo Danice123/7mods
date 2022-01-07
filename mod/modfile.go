@@ -14,6 +14,7 @@ const ITEMS = TargetFile("items.xml")
 const ENTITYCLASSES = TargetFile("entityclasses.xml")
 const PROGRESSION = TargetFile("progression.xml")
 const RECIPES = TargetFile("recipes.xml")
+const LOOT = TargetFile("loot.xml")
 
 type Modfile struct {
 	target  TargetFile
