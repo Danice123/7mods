@@ -1,9 +1,18 @@
 package main
 
 import (
-	"github.com/Danice123/7mods/mod/patch"
+	"github.com/Danice123/7mods/mod"
+	"github.com/Danice123/7mods/mod/betterfood"
+	"github.com/Danice123/7mods/mod/doublegun"
 )
 
+var mods = []func() *mod.Mod{
+	betterfood.BetterFoodMod,
+	doublegun.DoubleDamageGuns,
+}
+
 func main() {
-	patch.PatchExploits().Write()
+	for _, m := range mods {
+		m().Write()
+	}
 }

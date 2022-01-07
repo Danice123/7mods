@@ -13,7 +13,7 @@ func BetterFoodMod() *mod.Mod {
 
 	itemOverride := mod.NewModFile(mod.ITEMS)
 	for _, item := range items.Items {
-		for _, eg := range item.EffectGroup {
+		for _, eg := range item.EffectGroups {
 			for _, effect := range eg.TriggeredEffects {
 				if effect.CVar == "$foodAmountAdd" {
 					xpath := fmt.Sprintf("/items/item[@name='%s']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value", item.Name)

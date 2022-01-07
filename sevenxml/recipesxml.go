@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-type Recipes struct {
+type RecipeXML struct {
 	XMLName xml.Name  `xml:"recipes"`
 	Recipes []*Recipe `xml:"recipe"`
 }
@@ -23,13 +23,13 @@ type Ingredient struct {
 	Count   int      `xml:"count,attr"`
 }
 
-func ReadRecipesXml() *Recipes {
+func ReadRecipesXml() *RecipeXML {
 	data, err := os.ReadFile("recipes.xml")
 	if err != nil {
 		panic(err)
 	}
 
-	recipes := &Recipes{}
+	recipes := &RecipeXML{}
 	err = xml.Unmarshal(data, recipes)
 	if err != nil {
 		panic(err)

@@ -1,4 +1,4 @@
-package main
+package fairjars
 
 var EXCEPTIONS = map[string]bool{
 	"drinkJarBlackStrapCoffee":  true,

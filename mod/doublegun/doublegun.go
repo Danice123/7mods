@@ -1,4 +1,4 @@
-package main
+package doublegun
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ func DoubleDamageGuns() *mod.Mod {
 	for _, item := range items.Items {
 		if strings.HasPrefix(item.Name, "ammo") && !strings.Contains(item.Name, "Bundle") && !strings.HasPrefix(item.Name, "ammoProjectile") && !strings.HasPrefix(item.Name, "ammoGas") {
 
-			for _, eg := range item.EffectGroup {
+			for _, eg := range item.EffectGroups {
 				if eg.Name == item.Name {
 					for _, pe := range eg.PassiveEffects {
 						if pe.Name == "EntityDamage" && pe.Operation == "base_set" {
